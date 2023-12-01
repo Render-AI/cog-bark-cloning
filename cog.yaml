@@ -13,10 +13,11 @@ build:
     - 'sox; platform_system != "Windows"'
     - "tensorboardX"
     - "torch"    
+    - "torchvision"
+    - "torchaudio"
     - "light-the-torch"
     
-  run:    
-    - pip install torch torchvision torchaudio
+  run:        
     - python3 install_hubert.py
 
 predict: "predict.py:Predictor"
