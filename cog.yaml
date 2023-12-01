@@ -18,6 +18,6 @@ build:
     - "light-the-torch"
     
   run:        
-    - python3 install_hubert.py
+    - python3 ./install_hubert.py
 
 predict: "predict.py:Predictor"
