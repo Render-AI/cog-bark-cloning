@@ -12,8 +12,7 @@ build:
     - 'soundfile; platform_system == "Windows"'
     - 'sox; platform_system != "Windows"'
     - "tensorboardX"
-    - "torch"    
-    - "torchvision"
+    - "torch"        
     - "torchaudio"
     - "light-the-torch"
     
