@@ -9,11 +9,10 @@ build:
     - "sentencepiece"
     - "transformers"
     - "encodec"
-    - "soundfile;"
-    - "sox"
+    - 'soundfile; platform_system == "Windows"'
+    - 'sox; platform_system != "Windows"'
     
-  run:
-    - pip install -r requirements.txt
+  run:    
     - pip install torch torchvision torchaudio
 
 predict: "predict.py:Predictor"
