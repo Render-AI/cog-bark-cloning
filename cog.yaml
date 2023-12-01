@@ -11,7 +11,10 @@ build:
     - "encodec"
     - 'soundfile; platform_system == "Windows"'
     - 'sox; platform_system != "Windows"'
-    - "tensorboardX"    
+    - "tensorboardX"
+    - "torch"    
+    - "torchvision"
+    - "torchaudio"
     - "light-the-torch"
     
   run:        
