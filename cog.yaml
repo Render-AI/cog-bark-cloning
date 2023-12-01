@@ -1,0 +1,19 @@
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.10"
+  python_packages:
+    - "audiolm-pytorch==1.1.4"
+    - "fairseq"
+    - "huggingface-hub"
+    - "sentencepiece"
+    - "transformers"
+    - "encodec"
+    - "soundfile;"
+    - "sox"
+    
+  run:
+    - pip install -r requirements.txt
+    - pip install torch torchvision torchaudio
+
+predict: "predict.py:Predictor"
